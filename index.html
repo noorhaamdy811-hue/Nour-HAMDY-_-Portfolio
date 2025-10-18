@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Hamdy | Portfolio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #222;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #5a189a, #7b2cbf, #9d4edd);
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f3c623;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    /* ===== Home ===== */
+    #home {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 90vh;
+      background: linear-gradient(to bottom right, #f9f7fd, #ffffff);
+    }
+
+    #home img {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(155, 89, 182, 0.2);
+      transition: 0.5s;
+    }
+
+    #home img:hover {
+      transform: scale(1.05);
+    }
+
+    #home .intro {
+      max-width: 500px;
+    }
+
+    #home h1 {
+      font-size: 2.7rem;
+      color: #5a189a;
+    }
+
+    #home h2 {
+      color: #222;
+      margin: 10px 0;
+    }
+
+    #home p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    /* ===== Section Titles ===== */
+    h2.section-title {
+      text-align: center;
+      color: #5a189a;
+      margin-bottom: 35px;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    h2.section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: #f3c623;
+      border-radius: 2px;
+    }
+
+    /* ===== Boxes ===== */
+    .skills, .experience, .projects, .contact {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 40px;
+      margin-top: 30px;
+      transition: 0.3s;
+    }
+
+    .skills:hover, .experience:hover, .projects:hover, .contact:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(90, 24, 154, 0.15);
+    }
+
+    .skills ul, .experience ul {
+      list-style: none;
+      line-height: 2;
+      font-size: 1.1rem;
+    }
+
+    .projects .card {
+      background-color: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      transition: 0.3s;
+    }
+
+    .projects .card:hover {
+      background-color: #f3e8ff;
+      transform: translateY(-4px);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      color: #5a189a;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid #5a189a;
+      padding: 8px 20px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background-color: #f3c623;
+      color: #000;
+      border-color: #f3c623;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #5a189a;
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+    }
+
+    @media(max-width:768px){
+      #home {
+        flex-direction: column;
+        text-align: center;
+      }
+      #home img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><strong>Noor Hamdy</strong></div>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" data-aos="fade-up">
+    <div class="intro">
+      <h1>Hi, I’m Noor Hamdy 👋</h1>
+      <h2>Interpreter | Graphic Designer | Member of Team Joker</h2>
+      <p>I’m 21 years old, a student at the Faculty of Languages and Simultaneous Interpretation.  
+        I work as an English interpreter for the Undersecretary of the Ministry of Agriculture in Ismailia.  
+        I also host conferences and official events.  
+        Passionate about communication, translation, and creative design.</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="Noor Profile Photo" data-aos="zoom-in">
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center; font-size:1.1rem; max-width:700px; margin:auto;">
+      I’m <strong>Noor Hamdy</strong> — a simultaneous interpreter and graphic designer.  
+      I’m a proud member of <strong>Team Joker</strong> within the <strong>Youth Helping Youth</strong> initiative.  
+      My goal is to leave a unique mark through every translation, design, and project I work on.  
+      I believe that creativity begins with passion and grows with purpose.
+    </p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <ul>
+        <li>🔹 Simultaneous Interpretation (Arabic ↔ English)</li>
+        <li>🔹 Public Speaking & Event Hosting</li>
+        <li>🔹 Graphic Design (Canva Pro & Photoshop)</li>
+        <li>🔹 Bilingual Content Writing</li>
+        <li>🔹 Basic Web Development (HTML & CSS)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience">
+      <ul>
+        <li>🎤 English Interpreter for the Undersecretary of Agriculture in Ismailia</li>
+        <li>🎙 Presenter of official conferences & youth events</li>
+        <li>🎨 Graphic Designer – Team Joker | Youth Helping Youth</li>
+        <li>🍋 Organizer & Interpreter – Ismailia Mango Festival</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>My personal website to showcase my journey as an interpreter and designer.</p>
+      </div>
+      <div class="card">
+        <h3>🎬 Presentation Design</h3>
+        <p>Created professional presentation slides for official conferences and youth initiatives.</p>
+      </div>
+      <p style="text-align:center; margin-top:20px;">🔜 More projects coming soon...</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact" style="text-align:center;">
+      <a href="https://www.linkedin.com/in/noor-hamdy-22ab48386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/noor_haamdyy?igsh=bWZkcTF3NjJsdW5x&utm_source=qr" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/share/1B9x8eGqmE/?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    Designed by <strong>Noor Hamdy</strong> | Member of Team Joker | SHABAB BTSAAD SHABAB 💜✨
+  </footer>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>
